@@ -1,0 +1,19 @@
+.triangle {
+    width: 0;
+    height: 0;
+    position: relative;
+}
+.triangle::before {
+    content: '';
+    position: absolute;
+    display: block;
+    border: 20px solid transparent;
+    border-top-color: red;
+}
+.triangle::after {
+    content: '';
+    position: absolute;
+    display: block;
+    border: 20px solid transparent;
+    border-right-color: blue;
+}
