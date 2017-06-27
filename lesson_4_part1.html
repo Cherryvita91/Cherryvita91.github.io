@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Урок 4. Часть 1</title>
+  <meta charset="UTF-8">
+
+</head>
+<body style="font-size:18px; margin-left: 5%">
+
+<h2>Урок 4. Изучение создания формы в HTML</h2>
+		<form action="#" method="POST">
+			<label style="display: block;">
+			Ваш логин:
+						<div style="height: 10px;"> </div>
+
+				<input name ="автор" placeholder="введите логин" type="text"> 
+			</label>
+						<div style="height: 10px;"> </div>
+
+			<label> 
+			Пароль:
+						<div style="height: 10px;"> </div>
+
+			<input name ="пароль" placeholder="введите пароль" type="password">
+			</label>
+						
+			<div style="height: 10px;"> </div>
+			<div>
+			<label>
+			Информация о себе:
+						<div style="height: 10px;"> </div>
+
+			<textarea rows="5" style="width: 200px" placeholder="Введите информацию"></textarea>
+			</label>
+			<div style="height: 10px;"> </div>
+			
+			<div style="height: 10px;"> </div>
+			<label for="автор"></label>
+			<label><input id="автор" type="checkbox">
+			Подписаться на рассылку 
+			</label>
+			<div style="height: 10px;"> </div>
+			<button type="submit">Зарегистрироваться</button>
+			</div>
+
+		</form>
+
+<form>
+	<label>
+				<div style="height: 70px;"> </div>
+
+			Выберите жанр книги				
+			<div style="height: 10px;"> </div>
+
+		<label><span><input name="mybook" type="radio" value="comedy"> Комедия</span></label>
+					<div style="height: 10px;"> </div>
+
+		<label><span><input name="mybook" type="radio" value="detective"> Детектив </span></label>
+					<div style="height: 10px;"> </div>
+
+		<label><span><input name="mybook" type="radio" value="horror"> Ужасы</span></label>
+		<div style="height: 10px;"> </div>
+		<label><span><input name="mybook" type="radio" value="triller"> Триллер</span></label>
+
+	</label>	
+</form>
+</body>
+</html>
