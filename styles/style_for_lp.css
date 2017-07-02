@@ -25,6 +25,7 @@ display: inline-block;
     text-align: center;
     padding: 30px;
 
+
 }
 .column1,
 .column2 {
@@ -57,3 +58,14 @@ background: #676268;
 margin: 10px;
 padding: 15px;
 }
+
+a
+{
+	text-decoration: none;
+}
+
+a:hover { 
+    text-decoration: underline;
+    color: white;
+
+   } 
