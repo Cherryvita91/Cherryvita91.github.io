@@ -1,0 +1,32 @@
+.first {
+	font-size: 30px;
+	color: red;
+}
+.first-step {
+	font-size: 40px;
+	background: #11d6a1;
+	width: 75%;
+
+}
+.first1 {
+	margin: 40px;
+	color: green;
+	font-size: 30px;
+	text-decoration: underline;
+	
+}
+span {
+	color: red;
+}
+.father{
+	color: black;
+}
+.son + span 
+{
+	color: white;
+}
+ .wrap
+ {
+ 	width: 1024px;
+ 	margin: 0 auto;
+ }

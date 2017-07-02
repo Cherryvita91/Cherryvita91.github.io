@@ -1,0 +1,59 @@
+
+ .text-about-paul
+ {
+ 	text-align: left;
+    display: inline-block; 
+    vertical-align: middle;
+    width: 500px;
+    text-align: left;
+    font-size: 16px;
+    padding: 100px 0 0 100px;
+
+}
+
+.photo-paul
+{
+display: inline-block; 
+    vertical-align: top;
+    width: 400px;
+    text-align: left;
+}
+
+ .wrap {
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+
+}
+.column1,
+.column2 {
+    display: inline-block; 
+    vertical-align: top;
+    width: 400px;
+    text-align: left;
+}
+
+.column-elements
+
+{
+background: #b3bdce;
+margin: 10px;
+padding: 15px;
+}
+.buttonstyle 
+  			 {
+   			background: #ff274a;
+    		color: white; 
+    		font-size: 16px; 
+    		padding: 10px 40px;
+    		vertical-align: top;
+    		border: 0;
+  			 }
+
+.column-education
+{
+background: #676268;
+margin: 10px;
+padding: 15px;
+}
