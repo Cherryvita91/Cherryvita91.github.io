@@ -218,3 +218,19 @@ a:hover {
   height: 48px;
   z-index: 53;
 }
+
+
+
+.Maddison_University {
+  font-size: 18px;
+  font-family: "Myriad Pro";
+  color: rgba(255, 255, 255, 0.902);
+  line-height: 1.556;
+  text-align: left;
+  position: absolute;
+  left: 848.937px;
+  top: 2689.9px;
+  width: 156px;
+  height: 17px;
+  z-index: 114;
+}
