@@ -69,6 +69,7 @@ background: #f2f2f2
 {
 margin-top: 50px;
 font-size: 0;
+text-transform: uppercase;
 }
 
 .process-section_item
@@ -130,7 +131,180 @@ background: #ff2b4a;
 	background-image:url(../image/button_launch.png);
 }
 
+/*review*/
+.review
+{
+	background-color: #64cbc0;
+	padding: 135px 0;
+}
 
+.review-text
+{
+	max-width: 465px;
+    text-align: left;
+    line-height: 1.9;
+    position: relative;
+    margin-top: 95px;
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.751;
+
+
+}
+/*
+.review-text::before
+{
+ 	content: '';
+ 	display: block;
+ 	background-image: url(../image/quotes.png);
+	width: 58px;
+	height: 48px;
+	margin-bottom: 45px; 
+}*/
+
+.review-text::after
+{
+ 	content: '';
+ 	display: block;
+ 	background-image: url(../image/quotes.png);
+	width: 58px;
+	height: 48px;
+	position: absolute;
+	top: -93px;
+	left: 0;
+	margin-bottom: 45px;
+
+}
+
+/*
+.review-quotes
+{
+	background-image: url(../image/quotes.png);
+	width: 58px;
+	height: 48px;
+	margin: 0 0 45px 0;
+}*/
+
+.review-sign
+{
+ background-image: url(../image/sign.png);
+ width: 170px;
+ height: 66px;
+ margin: 60px 0 30px 0;
+}
+
+.review-name
+{
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 2;
+  text-align: left;
+  position: absolute;
+  
+}
+
+.header
+{
+	position: relative;
+	padding: 405px 0;
+	text-align: center;
+	background-image: url(../image/background_1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+    
+}
+
+.header-text
+
+{
+	display: inline-block;
+	vertical-align: top;
+ 	text-transform: uppercase;
+ 	font-size: 65px;
+ 	font-weight: bold;
+ 	letter-spacing: 12px;
+    color: white;
+ 	border-top: 3px solid rgba(255, 255, 255,0.5);
+ 	border-bottom: 3px solid rgba(255, 255, 255,0.5);
+ 	padding: 20px 0 20px 0;
+
+}
+
+
+
+.login-form
+{
+	font-size: 0;
+	background-image: url(../image/form_block_bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	position: 125px 0;
+}
+
+.login-form-column
+{
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	width: 577px;
+ 	font-size: 16px;
+    margin: 125px 0;
+ 
+}
+.login-form-column-left
+
+ {
+	margin-right: 15px; 
+
+ }
+
+
+
+.login-form-box
+{
+	background: rgba(93,35,96,0.3);
+	padding: 30px 40px;
+	color: rgba(255, 255, 255, 0.7);
+	text-align: left;
+	margin-bottom: 16px;
+	font-size: 16px;
+	line-height: 1.75em;
+
+}
+
+input
+{
+	width: 495px;
+	height: 48px;
+	color: white;
+	padding-left: 18px;
+	background-color: rgba(255, 255, 255, 0);
+	text-align: ; 
+
+}	
+
+textarea
+{
+	width: 493px;
+	height: 300px;
+	background-color: rgba(255, 255, 255, 0);
+	color: white;
+	border: 1;
+	padding-left: 18px;
+	padding-top: 20px;
+
+}
+
+form
+{
+	color: rgba(255, 255, 255, 0.6);
+	text-align: left;
+}
+.buttonstyle_right
+{
+	margin: 30px 0 0 315px;
+}
 .column1,
 .column2 {
     display: inline-block; 
@@ -151,7 +325,7 @@ padding: 15px;
    			background: #ff2b4a;
     		color: white; 
     		font-size: 16px; 
-    		min-width: 200px;
+    		min-width: 202px;
     		padding: 10px;
     		vertical-align: top;
     		border: 0;
@@ -197,40 +371,3 @@ a:hover {
    {
     color: pink;
    }
-
-
-
-
-
- .Paul_Lapkin 
- {
-
-  font-size: 65px;
-  font-family: "Raleway";
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 1.308;
-  text-align: center;
-  position: absolute;
-  left: 452.442px;
-  top: 538.564px;
-  width: 550px;
-  height: 48px;
-  z-index: 53;
-}
-
-
-
-.Maddison_University {
-  font-size: 18px;
-  font-family: "Myriad Pro";
-  color: rgba(255, 255, 255, 0.902);
-  line-height: 1.556;
-  text-align: left;
-  position: absolute;
-  left: 848.937px;
-  top: 2689.9px;
-  width: 156px;
-  height: 17px;
-  z-index: 114;
-}
