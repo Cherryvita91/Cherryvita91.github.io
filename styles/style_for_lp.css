@@ -140,11 +140,15 @@ margin: 0 7px;
 	background-color: white;
 
 }
-
+.latest-work img:hover
+{
+   opacity: 1.0;
+}
 .my-latest-work-block
 {
 padding-top: 120px;
 width: 1170px;
+
 }
 .latest-work-images
 {
@@ -155,6 +159,7 @@ width: 1170px;
 .latest-work img
 {
 	padding: 2px;
+	opacity: 0.7;
 }
 
 .process-section_design 
@@ -206,7 +211,7 @@ background: #ff2b4a;
 /*review*/
 .review
 {
-	background-color: #64cbc0;
+	background-image: url(../image/background_6.jpg);
 	padding: 135px 0;
 }
 
@@ -358,7 +363,7 @@ margin: 0 auto;
 
  padding-top: 60px;
  
- margin: 0 auto;
+ margin: 6px;
  width: 545px;
  height: 580px;
  display: inline-block;
@@ -401,16 +406,6 @@ form
 	margin: 30px 0 0 315px;
 }
 
-
-.footer-text
-{
- font-size: 12px;
- font-family: "Myriad Pro";
- color: rgba(255, 255, 255, 0.502);
- text-align: center;
- 
-}
-
 .buttonstyle 
   			 {
    			background: #ff2b4a;
@@ -424,6 +419,13 @@ form
 
   			 }
 /* действие прозрачности при наведении мышкой накнопку*/
+.buttonstyle-bg
+
+{
+	position: relative;
+	left: 250px;
+	background-color: black;
+}
 
 .buttonstyle:hover
 {
@@ -436,11 +438,35 @@ background: #676268;
 margin: 10px;
 padding: 15px;
 }
+
 .footer
 {
-	background-color: black;
+	margin: 0 auto;
+	font-size: 0px;
+	background-color: #000;
+	height: 120px;
 }
-a
+
+
+.footer-text
+{
+ margin: 0 auto;
+ padding-top: 20px;
+ font-size: 12px;
+ font-family: "Myriad Pro";
+ color: rgba(255, 255, 255, 0.502);
+ text-align: center;
+ 
+}
+.footer-icons
+
+{
+	display: inline;
+	vertical-align: middle;
+	
+}
+
+a 
 {
 	text-decoration: none;
 }
