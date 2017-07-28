@@ -93,9 +93,13 @@ hr
 }
 
 .list-menu li:hover {
-	opacity: .7;
-}
+	color: #ff2b4a;
 
+}
+.list-menu a:hover
+{
+	color: #ff2b4a;
+}
 .close {
 	position: absolute;
 	top: 5px;
@@ -137,15 +141,7 @@ hr
     top: 20px;
     right: 90px;
 }
-.my-head_menu-icon-pink
-{
-    background: url(../image/button-menu-pink.png) no-repeat;
-    position: absolute;
-    width: 59px;
-    height: 59px;
-    top: 20px;
-    right: 90px;
-}
+
 .photo-paul
 {
 	padding-top: 50px;
@@ -271,10 +267,11 @@ a.tooltips {
 a.tooltips span {
   position: absolute;
   width:140px;
-  color: #fff;
+  color: #ff2b4a;
+  font-weight: bolder;
   background: #000;
   height: 40px;
-  line-height: 30px;
+  line-height: 25px;
   text-align: center;
   visibility: hidden;
   border-radius: 6px;
