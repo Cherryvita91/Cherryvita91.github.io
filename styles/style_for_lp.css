@@ -128,7 +128,24 @@ hr
     top: 20px;
     right: 90px;
 }
-
+.my-head_menu-icon:hover
+{
+	 background: url(../image/button-menu-pink.png) no-repeat;
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    top: 20px;
+    right: 90px;
+}
+.my-head_menu-icon-pink
+{
+    background: url(../image/button-menu-pink.png) no-repeat;
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    top: 20px;
+    right: 90px;
+}
 .photo-paul
 {
 	padding-top: 50px;
