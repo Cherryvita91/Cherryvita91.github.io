@@ -66,6 +66,16 @@ hr
     margin: 0 auto;
     text-align: center;
 }
+.my-header_menu-icon
+{
+    width: 59px;
+    height: 59px;
+    background: url(../image/button-menu.png) no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 90px;
+}
+
 
 .photo-paul
 {
@@ -159,8 +169,47 @@ width: 1170px;
 .latest-work img
 {
 	padding: 2px;
-	opacity: 0.7;
+	opacity: 0.95;
 }
+
+a.tooltips {
+  position: relative;
+  display: inline;
+}
+a.tooltips span {
+  position: absolute;
+  width:140px;
+  color: #FFFFFF;
+  background: #000000;
+  height: 40px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+}
+a.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+a:hover.tooltips span {
+ 
+  bottom: 70px;
+  visibility: visible;
+  left: 30%;
+  margin-left: -75px;
+  z-index: 999;
+}
+
+ 
+
+
 
 .process-section_design 
 {
@@ -212,6 +261,7 @@ background: #ff2b4a;
 .review
 {
 	background-image: url(../image/background_6.jpg);
+	background-repeat: no-repeat;
 	padding: 135px 0;
 }
 
@@ -472,7 +522,7 @@ a
 }
 
 a:hover { 
-    opacity: 0.3;
+    opacity: 0.9;
    } 
 
    a:link /*цвет ссылки*/ 
@@ -491,3 +541,5 @@ a:hover {
    {
     color: #fff;
    }
+
+

@@ -1,25 +1,25 @@
-$(document).ready(function(e) 
+/*$(document).ready(function(e) 
 
-{
-             
-
-
-
-//изменение цвета кнопки при наведении//
-
-
+{             
 $('.buttonstyle').click(
-
 	function()
-
 	{
-
  $('.buttonstyle').addClass("buttonstyle-bg")
 	}
-
 );
+}); */
 
+$(document).ready(function(e) 
 
-
+{            
+$('.buttonstyle').mouseenter(
+        function(){
+            $('.tooltip').show();
+        }
+    );
+    $('.buttonstyle').mouseout(
+        function(){
+            $('.tooltip').hide();
 });
+
 

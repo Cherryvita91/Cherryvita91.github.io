@@ -1,0 +1,16 @@
+.my-info_button-wrap {
+    position: relative;
+}
+.tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: -10px;
+    width: 200px;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+}
