@@ -1,25 +1,51 @@
-/*$(document).ready(function(e) 
+$(document).ready(function(e) {
 
-{             
-$('.buttonstyle').click(
-	function()
-	{
- $('.buttonstyle').addClass("buttonstyle-bg")
-	}
-);
-}); */
 
-$(document).ready(function(e) 
+	$('.close').click(
+		function(){
+		$('.page-title_aside').hide(300);	
+		}
 
-{            
+		
+		);
+
+
+
+	$('.my-head_menu-icon').click(
+		function(){
+		$('.page-title_aside').show(300);	
+
+		}
+
+		);
+
+
+
+	$('.list-menu li').click(
+		function(){
+			$('.page-title_aside').hide(300);
+		}
+
+		);
+
+
 $('.buttonstyle').mouseenter(
-        function(){
-            $('.tooltip').show();
-        }
-    );
-    $('.buttonstyle').mouseout(
-        function(){
-            $('.tooltip').hide();
+		function(){
+			$('.tooltip_first').show(300);
+		}
+
+
+		);
+
+		$('.buttonstyle').mouseout(
+		function(){
+			$('.tooltip_first').hide(300);
+		}
+
+
+		);
+
+	
+
+
 });
-
-

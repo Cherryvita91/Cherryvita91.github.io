@@ -61,21 +61,73 @@ hr
 	opacity: 0.8;
 }
 
+.page-title {
+ 	text-align: center;	 	
+ 	
+}
+
+/*menu*/
+.page-title_aside {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 300px;
+	background-color: rgba(0,0,0,.8);
+	color: #fff;
+	text-align: left;
+	z-index: 100;
+	display: none;
+}
+
+
+.list-menu {
+	list-style: none;
+	margin: 80px 0 0 20px;
+	padding: 0;
+}
+
+.list-menu li {
+	margin: 0 0 15px;
+	cursor: pointer;
+}
+
+.list-menu li:hover {
+	opacity: .7;
+}
+
+.close {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.close:hover {
+	opacity: .7;
+}
+
+.list-menu a {
+	text-decoration: none;
+	color: #fff;
+}
+/*menu*/
+
  .wrap {
     width: 1170px;
     margin: 0 auto;
     text-align: center;
 }
-.my-header_menu-icon
+.my-head_menu-icon
 {
-    width: 59px;
-    height: 59px;
     background: url(../image/button-menu.png) no-repeat;
     position: absolute;
+    width: 59px;
+    height: 59px;
     top: 20px;
     right: 90px;
 }
-
 
 .photo-paul
 {
@@ -106,6 +158,28 @@ line-height: 1.75em;
 margin: 30px 0;
 
 }
+/*button with tooltip*/
+
+.tooltip_first{
+
+	width: 150px;
+	font-family:'Roboto'sans-serif;
+	height: 20px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	font-size: 14px;
+	background: #fff;
+	position: absolute;
+	bottom: 100%;
+	left: 200px;
+	border-radius: 2px;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+	display: none;
+}
+
+.button-wrap {
+	position: relative;
+}
 
 .process-section
 {
@@ -120,6 +194,7 @@ background: #f2f2f2
 margin-top: 50px;
 font-size: 0;
 text-transform: uppercase;
+font-weight: bold;
 }
 
 .process-section_item
@@ -174,13 +249,13 @@ width: 1170px;
 
 a.tooltips {
   position: relative;
-  display: inline;
+  display: inline-block;
 }
 a.tooltips span {
   position: absolute;
   width:140px;
-  color: #FFFFFF;
-  background: #000000;
+  color: #fff;
+  background: #000;
   height: 40px;
   line-height: 30px;
   text-align: center;
@@ -188,7 +263,9 @@ a.tooltips span {
   border-radius: 6px;
 }
 a.tooltips span:after {
-  content: '';
+ 
+ content: "";
+  font-family: "Roboto";
   position: absolute;
   top: 100%;
   left: 50%;
@@ -263,6 +340,8 @@ background: #ff2b4a;
 	background-image: url(../image/background_6.jpg);
 	background-repeat: no-repeat;
 	padding: 135px 0;
+	background-size: cover;
+	position: relative;
 }
 
 .review-text
