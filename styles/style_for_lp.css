@@ -609,7 +609,31 @@ padding: 15px;
 	
 }
 
-a 
+.popup-wrap
+{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(56,56,56,.5);
+	z-index: 10;
+}
+
+.popup
+{
+  
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  width: 500px;
+  padding: 40px;
+  left: 50%;
+  top: 200px;
+  margin-left: -250px;
+}
+
+a
 {
 	text-decoration: none;
 }
