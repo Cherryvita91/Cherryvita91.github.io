@@ -64,6 +64,18 @@ $(".popup-wrap").fadeOut(700);
 
 });
 
+//*accordion*//
 
 
 });
+
+
+
+$( function() {
+    $( "#accordion" ).accordion();
+  } );
+
+
+$( function() {
+    $( "#tabs" ).tabs();
+  } );
