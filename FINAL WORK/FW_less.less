@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+@button-color: #1bbc9b;
+@text-color-white: #fff;
+@text-color-grey: #444;
+@hover-color: #50b392;
+@footer-color: #2d3e50;
+@color-turquois: #16a086;
+
+._button_text{
+	  font-size: 14px;
+}
+._subtitle{
+  font-size: 28px;
+  color: @text-color-grey;
+  text-align: center;
+  font-weight: 400; 
+  margin: 0 auto;
+ }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+    font-size: 18px;
+    color: @text-color-white;
+}
+
+.wrap {
+    margin: 0 auto;
+    padding: 50px 20px;
+    max-width: 1020px;
+}
+.header
+{
+	margin: 0 auto;
+	height: 95px;
+	padding: 15px;
+    max-width: 1020px;
+	background-color: #fff;
+	&-logo{
+		display: inline-block;
+		position: relative;
+		padding: 20px 15px 20px 40px;
+	}
+	&-logo-text {
+		padding-right: 20px;
+		padding-top: 20px;
+		margin: 0 auto;
+		display: inline-block;
+		vertical-align: top;
+		color: @text-color-grey;
+	}
+	&-name{
+  		font-size: 20px;
+  		font-weight: 700;
+  		opacity: 0.9;}
+	&-subname{
+		margin: 0 auto;
+		font-size: 14px;
+		font-weight: 300;}
+	&-menu{
+		display: inline-block; 
+		padding-left: 300px;
+		}
+	&-menu a {
+		text-decoration: none;
+		color: @text-color-grey;
+		text-align: right;
+		padding: 25px 12px;	}
+
+	&-menu a:hover{
+		background: @button-color;
+		padding: 10px 10px;
+		cursor: pointer;
+		color: @text-color-white;	}
+
+	&-menu a:link{
+		color: @text-color-grey;
+	}
+
+
+}
+
+.general
+{
+	background: url(images/general-bg1.jpg) no-repeat center center;
+	height: 520px;
+
+	&-big-title{
+		padding-top: 80px;
+		 font-size: 55px;
+		 text-align: center;
+		 font-weight: 300;}
+
+	&-preview-text{
+		opacity: 0.8;
+		color: @text-color-white;
+		text-align: center;
+		padding: 40px 220px;
+		letter-spacing: 0.05px}
+
+	&-button-center{
+		text-align: center;}
+	&-button-center a:hover{
+		opacity: 0.9;
+	}
+
+	&-arrow {
+		padding-top: 35px;
+		text-align: center;}
+
+}
+
+
+.buttonstyle{
+	text-transform: uppercase;
+	background: @button-color;
+	color: @text-color-white; 
+    font-size: 13px;
+    font-weight: 400; 
+    letter-spacing: 2px;
+    min-width: 120px;
+    padding: 12px;
+    vertical-align: top;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Lato';
+}
+
+.buttonstyle:hover{ 
+	opacity: 0.9;
+
+}
+
+.portfolio {
+	&-subtitle{
+		._subtitle;
+		color: @text-color-grey;}
+	&-text{
+		padding-top: 20px;
+		text-align: center;
+		color: @text-color-grey;
+		font-size: 16px;
+		font-weight: 400;}
+	&-button-group {
+		min-width: none;
+		text-align: center;
+		padding-top: 35px;
+		padding-bottom: 30px;}
+	&-buttonstyle {
+		min-width: 0px;
+		margin-right: 7px;
+		letter-spacing: 1px;}
+	&-icon {
+		position: relative;
+  		display: inline-block;
+  		padding: 15px 34px;	}
+	&-icon-group{
+		display: inline-block;
+    	vertical-align: top;}
+
+	}
+.portfolio-icon:hover {
+	color: @button-color;
+
+}
+
+.about{
+	text-align: center;
+	background-color: @color-turquois;
+	&-subtitle{
+		._subtitle;
+		color: @text-color-white;
+	}
+	&-text{
+		padding-top: 20px;
+		text-align: center;
+		color: @text-color-white;
+		font-size: 14px;
+		font-weight: 300;}
+
+	&-block{
+		display: inline-block;
+		text-align: center;
+		vertical-align: top;
+		padding: 30px;
+		position: relative;
+		}
+			
+	&-information {
+		background-color: #fff;
+		max-height: 190px;
+		max-width: 220px; 
+		margin: 0 auto;	}
+	&-name {
+	  color: @text-color-grey;
+	  padding-top: 15px;
+	  font-size: 18px;
+	  font-family: "Lato";
+	  text-align: center;
+	  font-weight: 600;
+
+	}
+	&-photo {
+		height: 228px;
+		weight: 220px;
+	}
+	&-job {
+		color: @text-color-grey;
+		padding: 5px 10px;
+		font-size: 14px;
+		font-style: italic;
+		font-weight: 400;
+	}
+	&-text-interview {
+		color: @text-color-grey;
+		font-size: 14px;
+		font-family: "Lato";
+		padding: 10px;
+		text-align: left;
+		font-weight: 400;
+		line-height: 1.5;
+	}
+
+}
+
+.contact {
+
+	background-color: #ecf0f1;
+	padding-top: 50px;
+	&-form-items{
+		display: inline-block;
+		vertical-align: top;
+	}
+	&-button-right {
+		text-align: right;
+	}
+	&-info {
+	        display: flex;
+	        &-form {
+	            flex: 2;}
+	        &-text {
+	            flex: 1;
+	            color: @text-color-grey;
+	            font-family: 'Lato';
+	            font-size: 14px;
+	            padding-top: 50px;
+	            padding-left: 20px;
+	            line-height: 2;
+	            font-weight: 400;
+	            }
+	        &-adress{
+	        	padding: 10px 0px 20px 0px;
+	        }
+	       
+    		}
+
+    input,
+    textarea {
+        
+        padding: 15px 0;
+        border: 2px solid #bec3c7;
+        outline: none;
+        font-family: 'Lato';
+        padding-left: 12px;
+        color: @text-color-grey;
+        }
+    input {
+    	width: 315px;
+	    height: 20px;
+    	margin-right: 5px;
+        margin-top: 50px;}
+
+    textarea {
+        height: 150px;
+        width: 655px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        padding-left: 12px;
+        resize: none;
+        margin-top: 25px;}
+}
+
+
+.footer {
+	background-color: #2d3e50;
+	height: 85px;
+	color: @text-color-white;
+	font-size: 14px;
+ 	font-family: "Lato";
+	margin: 0 auto;
+	&-text{
+		padding: 40px 0px 0px 170px;
+	}
+	&-arrow{
+		font-size: 40px;
+		font-weight: 600;
+		text-align: center;
+		width: 44px;
+		height: 44px;
+		background: @button-color;
+		margin-left: 80%;
+		position: absolute;
+	}
+
+}
+
