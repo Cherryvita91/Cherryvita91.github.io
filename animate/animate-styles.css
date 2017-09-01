@@ -1,0 +1,130 @@
+
+	@font-face {
+		font-family: 'WebSymbolsRegular';
+		src: url('fonts/websymbols-regular-webfont.woff') format('woff');
+	}
+.body{
+	margin: 0;
+	padding: 0;
+	font: 14px Arial, sans-serif;}
+
+.menu,
+.menu-icon,
+.menu-text1,
+.menu-text2 {
+	transition: all .2s linear;
+}
+.menu {
+	height: 60px;
+	overflow: hidden;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 40px;
+	box-shadow: 0 0 5px rgba(0,0,0,.3);
+	background: #fff;
+	border-left: 10px solid #000;
+} 
+.menu-icon,
+.menu-text
+{
+	display: inline-block;
+}
+.menu-text{
+	vertical-align: middle;
+}
+.menu-icon {
+	display: inline-block;
+	font-size: 30px;
+	width: 90px;
+	text-align: center;
+	font-family: 'WebSymbolsRegular';
+}
+.menu-text1 {
+	font-size: 30px;
+}
+.menu:hover {
+	color: #fff004;
+	background: #000;
+	border-left-color: #fff004;
+}
+.menu:hover .menu-text2 {
+	font-size: 30px;
+	color: #fff;
+
+}
+.menu:hover .menu-text1 {
+	font-size: 14px;
+}
+.menu:hover .menu-icon {
+	font-size: 50px;
+}
+
+/*boll*/
+
+.boll {
+	margin: 0 auto;
+	width: 250px;
+	height: 250px;
+	padding: 40px;
+	background: #fff;
+	text-align: center;
+	border: 10px solid #e0dbdb;
+	border-radius: 250px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	box-sizing: border-box; 
+}
+.boll-icon {
+	margin-bottom: 20px;
+	height: 60px;
+	font: 40px 'WebSymbolsRegular';
+	color: #e0dbdb;
+}
+
+.boll-text {
+	position: relative;
+	font-size: 24px;
+	opacity: 0.8;
+}
+.boll-text2 {
+	opacity: 0;
+	visibility: hidden;
+}
+.boll-text1,
+.boll-text2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+
+}
+
+.boll:hover {
+	transform: rotate(360deg);
+	background: #f6f6f6;
+	border-color: #fff;
+}
+.boll:hover .boll-icon
+{
+	color: #555;
+	font-size: 60px;
+
+}
+.boll:hover .boll-text {
+	font-size: 26px;
+}
+.boll:hover .boll-text1 {
+ opacity: 0;
+ visibility: hidden;
+}
+.boll:hover .boll-text2 {
+	opacity: 1;
+	visibility: visible;
+}
+
+.boll,
+.boll-icon,
+.boll-text1,
+.boll-text2
+{
+	transition: all .5s linear;
+}

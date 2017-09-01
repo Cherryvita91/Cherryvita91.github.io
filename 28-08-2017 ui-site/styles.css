@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font: 14px Arial, sans-serif;
+}
+
+.head {
+	height: 100vh;
+	background: url(img/bg-header.jpg) no-repeat center 0;
+	background-size: cover;
+}
+.wrap-menu {
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	color: #fff;
+	font: 45px 'icomoon';
+}
+.logo::before {
+	content: "\e60a";
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+}
+.menu-item {
+	padding: 0 20px;
+	color: #fff;
+}
+.search {
+	color: #fff;
+	font: 20px 'icomoon';
+}
+.search::before {
+	content:  "\e601";
+}
+.photo {
+	width: 40px;
+	height: 40px;
+	background: url(img/face4.jpg) no-repeat 0 0;
+	border-radius: 40px;
+	background-size: 100%;
+	border: 3px solid #fff;
+}

@@ -20,10 +20,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Lato';
-	font-style: normal;
-	font-weight: 300;
-    font-size: 18px;
+    font: 300 18px 'Lato', sans-serif;
     color: @text-color-white;
 }
 
@@ -32,10 +29,10 @@ body {
     padding: 50px 20px;
     max-width: 1020px;
 }
+
 .header
 {
 	margin: 0 auto;
-	height: 95px;
 	padding: 15px;
     max-width: 1020px;
 	background-color: #fff;
@@ -47,7 +44,6 @@ body {
 	&-logo-text {
 		padding-right: 20px;
 		padding-top: 20px;
-		margin: 0 auto;
 		display: inline-block;
 		vertical-align: top;
 		color: @text-color-grey;
@@ -57,7 +53,6 @@ body {
   		font-weight: 700;
   		opacity: 0.9;}
 	&-subname{
-		margin: 0 auto;
 		font-size: 14px;
 		font-weight: 300;}
 	&-menu{
@@ -67,25 +62,27 @@ body {
 	&-menu a {
 		text-decoration: none;
 		color: @text-color-grey;
+		cursor: pointer;
+		text-decoration: none;
+		color: #444;
 		text-align: right;
-		padding: 25px 12px;	}
+		padding: 8px;
+		text-transform: uppercase;}
 
 	&-menu a:hover{
 		background: @button-color;
-		padding: 10px 10px;
-		cursor: pointer;
 		color: @text-color-white;	}
-
-	&-menu a:link{
-		color: @text-color-grey;
-	}
-
 
 }
 
+
 .general
 {
-	background: url(images/general-bg1.jpg) no-repeat center center;
+	&:hover .footer-arrow {
+		visibility: hidden;
+	}
+	background: url(images/general-bg1.jpg) no-repeat center center fixed;
+	background-size: cover;
 	height: 520px;
 
 	&-big-title{
@@ -98,7 +95,11 @@ body {
 		opacity: 0.8;
 		color: @text-color-white;
 		text-align: center;
-		padding: 40px 220px;
+		margin: 0 auto;
+		width: 700px;
+		text-align: center;
+		padding-top: 40px;
+		padding-bottom: 50px;
 		letter-spacing: 0.05px}
 
 	&-button-center{
@@ -110,23 +111,27 @@ body {
 	&-arrow {
 		padding-top: 35px;
 		text-align: center;}
+	
+	}
+.general-arrow:hover{
+	opacity: 0.5;
 
 }
+
 
 
 .buttonstyle{
 	text-transform: uppercase;
 	background: @button-color;
 	color: @text-color-white; 
-    font-size: 13px;
-    font-weight: 400; 
+    font:  'Lato', 13px 400;
     letter-spacing: 2px;
     min-width: 120px;
     padding: 12px;
     vertical-align: top;
     border: 0;
     cursor: pointer;
-    font-family: 'Lato';
+    outline: none;
 }
 
 .buttonstyle:hover{ 
@@ -145,7 +150,6 @@ body {
 		font-size: 16px;
 		font-weight: 400;}
 	&-button-group {
-		min-width: none;
 		text-align: center;
 		padding-top: 35px;
 		padding-bottom: 30px;}
@@ -156,20 +160,26 @@ body {
 	&-icon {
 		position: relative;
   		display: inline-block;
-  		padding: 15px 34px;	}
+  		padding: 15px 34px;	
+
+		transition: all 1s linear;
+
+  	}
 	&-icon-group{
 		display: inline-block;
-    	vertical-align: top;}
+    	vertical-align: top;
+    	text-align: center;}
 
 	}
 .portfolio-icon:hover {
-	color: @button-color;
-
+	transform: rotate(360deg);
 }
+
 
 .about{
 	text-align: center;
 	background-color: @color-turquois;
+	position: relative;
 	&-subtitle{
 		._subtitle;
 		color: @text-color-white;
@@ -185,9 +195,13 @@ body {
 		display: inline-block;
 		text-align: center;
 		vertical-align: top;
-		padding: 30px;
+		margin: 30px;
 		position: relative;
+		&:hover .social {
+			visibility: visible;
+			opacity: .8;
 		}
+	}
 			
 	&-information {
 		background-color: #fff;
@@ -205,8 +219,11 @@ body {
 	}
 	&-photo {
 		height: 228px;
-		weight: 220px;
+		width: 220px;
+
 	}
+
+	
 	&-job {
 		color: @text-color-grey;
 		padding: 5px 10px;
@@ -226,65 +243,108 @@ body {
 
 }
 
+
+.social {
+	position: absolute;
+	visibility: hidden;
+	top: 94px;
+	left: 50%;
+	margin-left: -90px;
+	width: 180px;
+	height: 48px;
+	background-color: #16a086;
+	opacity: 0;
+	text-align: center;
+	img {
+		padding: 10px 5px;
+	}
+	a:hover {
+		opacity: .7;
+	}
+}
+
+
+
 .contact {
 
 	background-color: #ecf0f1;
-	padding-top: 50px;
-	&-form-items{
-		display: inline-block;
-		vertical-align: top;
-	}
+	padding-top: 20px;
 	&-button-right {
+		padding-top: 15px;
 		text-align: right;
+		padding-right: 25px;
 	}
-	&-info {
-	        display: flex;
-	        &-form {
-	            flex: 2;}
-	        &-text {
-	            flex: 1;
-	            color: @text-color-grey;
-	            font-family: 'Lato';
-	            font-size: 14px;
-	            padding-top: 50px;
-	            padding-left: 20px;
-	            line-height: 2;
-	            font-weight: 400;
-	            }
-	        &-adress{
-	        	padding: 10px 0px 20px 0px;
-	        }
-	       
-    		}
+	&-subtitle{
+		._subtitle;
+		color: @text-color-grey;}
+	&-text{
+		padding-top: 20px;
+		padding-bottom: 50px;
+		text-align: center;
+		color: @text-color-grey;
+		font-size: 16px;
+		font-weight: 400;}
+	&-columns{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&-flex{
+	}
+	&-form{
+		flex: 3;
+		min-width: 600px;
+		flex-shrink: 0;
+		&-items{
+			
+			&-input1{
+				display: inline-block;
+				position: relative;
+				vertical-align: top;
+				padding: 0px 20px 20px 0px;
 
-    input,
-    textarea {
-        
-        padding: 15px 0;
-        border: 2px solid #bec3c7;
-        outline: none;
-        font-family: 'Lato';
-        padding-left: 12px;
-        color: @text-color-grey;
-        }
-    input {
-    	width: 315px;
-	    height: 20px;
-    	margin-right: 5px;
-        margin-top: 50px;}
+			}
+			&-input2{
+				display: inline-block;
+				padding: 0px 20px 20px 0px;
+			}
+			input,
+			textarea{
+ 				padding: 10px;
 
-    textarea {
-        height: 150px;
-        width: 655px;
-        margin-right: 5px;
-        margin-bottom: 5px;
-        padding-left: 12px;
-        resize: none;
-        margin-top: 25px;}
+ 				/*box-sizing: border-box;
+ 				display: block;*/
+ 				border: 2px solid #bec3c7;
+			}
+			textarea {
+				resize: none;
+				width: 565px;
+				height: 150px;
+			}
+			input{
+				padding-right: 100px;
+			}
+			
+		}
+	}
+	&-information{
+		flex: 2;
+		min-width: 300px;
+		color: @text-color-grey;
+		font: 14px 400 "FontAwesome";
+		line-height: 1.7;
+	}
+
+	&-infotitle{
+
+	}
+	&-adress{}
+	&-phones{}
+
 }
 
 
 .footer {
+	position: relative;
 	background-color: #2d3e50;
 	height: 85px;
 	color: @text-color-white;
@@ -294,16 +354,57 @@ body {
 	&-text{
 		padding: 40px 0px 0px 170px;
 	}
-	&-arrow{
-		font-size: 40px;
-		font-weight: 600;
+	&-arrow {
+		visibility: visible;
+    	border-style: none;
+    	display: block;
+    	position: fixed;
 		text-align: center;
 		width: 44px;
 		height: 44px;
 		background: @button-color;
 		margin-left: 80%;
-		position: absolute;
+		bottom: 0;
+		right: 0;
+		bottom: 0;
+		outline: 0;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		img {
+			padding: 15px 10px;
+			
+		}
 	}
-
 }
 
+
+@media only screen and (max-width: 768px) {
+    .header {
+        &-menu{
+        	display: block;
+        	padding-top: 5px;
+        	text-align: right;
+        }
+
+        &-menu a {
+			padding: 5px;
+		}
+		  &-menu a:hover {
+			background-color: @button-color;
+		}
+ }
+    .general {
+    	&-preview-text {
+    	text-align: center;
+		margin: 0 auto;
+		width: 400px;
+		padding-top: 20px;
+		padding-bottom: 30px;
+		 }
+    	}
+    .contact {
+    	&-button-right {
+    		text-align: left;
+    	}
+    }
+    }

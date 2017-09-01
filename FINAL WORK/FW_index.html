@@ -6,9 +6,12 @@
         <link href="styles/base-styles.css" rel="stylesheet">
     	<link rel="stylesheet" media="screen" href="FW_less.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/final-js.js"></script>
     </head>
         <body>
-        <section class="header">
+        <section class="header" id="top">
                 <div class="header-logo"><img src="images/logo.png"></div>
                 <div class="header-logo-text">
                 <div class="header-name">BAK-ONE</div>
@@ -16,9 +19,9 @@
                 </div>
                 <div class="header-menu">
                 <a href="#">HOME</a>
-                <a href="#">PORTFOLIO</a>
-                <a href="#">ABOUT</a>
-                <a href="#">CONTACT</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
                 </div>
         </section>
         <section class="general">
@@ -30,21 +33,21 @@
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                     </div>
                     <div class="general-button-center">
-                        <button type="submit"; class="buttonstyle";>learn more</button>
+                        <button type=submit class="buttonstyle";>learn more</button>
                      </div>
-                        <div class="general-arrow"><img src="images/arrow.png">
+                        <div class="general-arrow"><a href="#portfolio"><img src="images/arrow.png"></a>
                         </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="wrap">
                 <div class="portfolio-subtitle">Portfolio</div>
                 <div class="portfolio-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
                     <div class="portfolio-button-group">
-                        <button type="submit"; class="buttonstyle portfolio-buttonstyle";>all</button></a>
-                        <button type="submit"; class="buttonstyle portfolio-buttonstyle";>web design </button></a>
-                        <button type="submit"; class="buttonstyle portfolio-buttonstyle";>graphic design</button></a>
-                        <button type="submit"; class="buttonstyle portfolio-buttonstyle";>flat design</button></a>
+                        <button type=submit class="buttonstyle portfolio-buttonstyle";>all</button></a>
+                        <button type=submit class="buttonstyle portfolio-buttonstyle";>web design </button></a>
+                        <button type=submit class="buttonstyle portfolio-buttonstyle";>graphic design</button></a>
+                        <button type=submit class="buttonstyle portfolio-buttonstyle";>flat design</button></a>
                     </div>
                         <div class="portfolio-icon-group">
                             <div class="portfolio-icon">
@@ -59,14 +62,21 @@
                             <div class="portfolio-icon"><a class="portfolio-tooltips" href="#"><img src="images/8.png"></a></div>
                         </div>
                   </div>
+                  
         </section>
 
-        <section class="about">
+        <section class="about"  id="about">
              <div class="wrap">
                 <div class="about-subtitle">About Us</div>
                     <div class="about-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
 
                         <div class="about-block">
+                                <div class="social">
+                                <a href="#"><img src="images/fb.png"></a>
+                                <a href="#"><img src="images/twitter.png"></a>
+                                <a href="#"><img src="images/g.png"></a>
+                                <a href="#"><img src="images/circle.png"></a>
+                                </div>
                             <div class="about-photo"><img src="images/melannie.png"></div>
                             <div class="about-information">
                             <div class="about-name">Melannie Doe</div>
@@ -75,6 +85,12 @@
                             </div>
                         </div>
                         <div class="about-block">
+                                <div class="social">
+                                    <a href="#"><img src="images/fb.png"></a>
+                                    <a href="#"><img src="images/twitter.png"></a>
+                                    <a href="#"><img src="images/g.png"></a>
+                                    <a href="#"><img src="images/circle.png"></a>
+                                </div>
                             <div class="about-photo"><img src="images/jhonnie.png"></div>
                             <div class="about-information">
                             <div class="about-name">Jhonnie Doe</div>
@@ -83,60 +99,64 @@
                             </div>
                         </div>
                         <div class="about-block">
+                              <div class="social">
+                                    <a href="#"><img src="images/fb.png"></a>
+                                    <a href="#"><img src="images/twitter.png"></a>
+                                    <a href="#"><img src="images/g.png"></a>
+                                    <a href="#"><img src="images/circle.png"></a>
+                                </div>
                             <div class="about-photo"><img src="images/daniel.png"></div>
                             <div class="about-information">
                             <div class="about-name">Daniel Doe</div>
                             <div class="about-job">Web Designer</div>
                             <div class="about-text-interview">Ut wisi enim ad inim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
                             </div>
-                            
-                        </div>
+                      </div>
                 </div>
+
+
         </section>
-        <section class="contact">
-        <div class="wrap">
-         <div class="portfolio-subtitle">Contact Us</div>
-                <div class="portfolio-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
-
-                <div class="contact-info">
-                   
-
-                        <div class="contact-info-form">
+<section class="contact" id="contact">
+    <div class="wrap">
+        <div class="contact-subtitle">Contact Us</div>
+            <div class="contact-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                <div class="contact-columns">
+                    <div class="contact-form">
                             <form action="#">
-                                <div class="contact-form-items"><input type="text" placeholder="Your name"></div>
-                                <div class="contact-form-items"><input type="text" placeholder="Your email"></div>
-                                <div class="contact-form-items"><textarea placeholder="Your message"></textarea></div>
-                                <div class="contact-button-right">
-                                <button class="buttonstyle">SUBMIT</button></div>
+                            <div class="contact-columns-flex">
+                            <div class="contact-form-items contact-form-items-input1"><input type="text" placeholder="Your name"></div>
+                            <div class="contact-form-items contact-form-items-input2"><input type="text" placeholder="Your email"></div>
+                            </div>
+                            <div class="contact-form-items"><textarea placeholder="Your message"></textarea></div>
+                            <div class="contact-button-right">
+                            <button class="buttonstyle">SUBMIT</button></div>
                             </form>
+                    </div>
+                        <div class="contact-information">
+                            <div class="contact-infotitle">Information</div>
+                            <div class="contact-adress">
+                                <div>&#9733; Bak-One CompPortfolioany</div> 
+                                <div>12345 Hollywood Bvld Street</div>
+                                <div>Los Angeles, California</div>
+                            </div>
+                            <div class="contact-phones">
+                                <div>&#9742;+444 (Phone) 123456</div>
+                                <div>&#9742; +123 (FAX) 0011223</div>
+                                <div>&#9993; info@bak-onecompany.com</div>
+                            </div>
                         </div>
-                            <div class="contact-info-text">
-                            <div class="contact-info-title">INFORMATION </div>
-                             <div class="contact-info-adress">
-                                    <div>&#9733; Bak-One Company</div> 
-                                    <div>12345 Hollywood Bvld Street</div>
-                                    <div>Los Angeles, California</div>
-                                    </div>
-                                    <div class="contact-info-phone">
-                                    <div>&#9742;+444 (Phone) 123456</div>
-                                    <div> &#9742; +123 (FAX) 0011223</div>
-                                    <div> &#9993; info@bak-onecompany.com</div>
-                                    </div>
 
-                            </div>  
-                           
                 </div>
+    </div>
+</section>
 
-            </div>
-        </section>
-        <section class="footer">
-        <div class="footer-text">
+<section class="footer">
+    <div class="footer-text">
             © Copyright 2013 Bak-One  |  One Page Flat Template
-        </div>
-        <div class="footer-arrow">^</div>
-            
-        </section>
-    </body>
+    </div>
+        <div class="footer-arrow"><a href="#top"><img src="images/arrow-bottom.png"></a></div>
+</section>
+</body>
 </html>
 
 
